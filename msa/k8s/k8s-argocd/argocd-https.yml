@@ -2,15 +2,15 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: argo-aws-esk-com-tls
+  name: argo-zindogch-com-tls
   namespace: argocd
 spec:
-  secretName: argo-aws-esk-com-tls
+  secretName: argo-zindogch-com-tls
   duration: 2160h #90day
   renewBefore: 360h #before 15day
   issuerRef:
     name: my-issuer
     kind: ClusterIssuer
-  commonName: argo.aws-esk.com
+  commonName: argo.zindogch.com
   dnsNames:
-  - argo.aws-esk.com
+  - argo.zindogch.com
